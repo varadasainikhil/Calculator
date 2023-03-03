@@ -19,13 +19,13 @@ def calc(num1, num2,operator):
 while(cont):
 	print(logo)
 	print("Welcome to the calculator ")
-	num1 = int(input("Enter the first number: "))
+	num1 = float(input("Enter the first number: "))
 	print("+ \n-\n*\n/")
 	cont2 =True
 	while(cont2):	
 		print("+ \n-\n*\n/")
 		operation = input("Pick an operation: ")
-		num2 = int(input("Enter the second number: "))
+		num2 = float(input("Enter the second number: "))
 		result = calc(num1,num2,operation)
 		print(f"{num1} {operation} {num2} = {result}")
 		Repeat = input(f"Type 'y' if you want to continue with {result}, or type 'n' to start a new calculation: ")
